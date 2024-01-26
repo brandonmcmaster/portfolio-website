@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { FaReact, FaVuejs, FaHtml5, FaCss3Alt, FaPython, FaLinux, FaSpotify, FaGithub } from 'react-icons/fa';
+import { SiFirebase } from 'react-icons/si'; // Additional libraries for specific icons
+
 
 const GitHubProjectCard = ({ project }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 border border-gray-300">
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.name}</div>
         <p className="text-gray-700 text-base">
@@ -15,6 +18,7 @@ const GitHubProjectCard = ({ project }) => {
     </div>
   );
 };
+
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -37,9 +41,11 @@ const Projects = () => {
   return (
     <div className="my-10">
       <div className="text-center p-5">
-        <h2 className="text-4xl font-bold">My Music</h2>
+      <h2 className="text-4xl font-bold inline-flex items-center">
+          <FaSpotify className="mr-2" /> My Music <FaSpotify className="ml-2" />
+        </h2>
         <br></br>
-        <h3>This playlist contains songs that I have either, written, produced, or performed on.</h3>
+        <h3>These are songd that I have written, produced, and performed on.</h3>
       </div>
 
       <div className="flex flex-wrap justify-center">
@@ -97,7 +103,9 @@ const Projects = () => {
       <div className="p-5">
         {/* GitHub Projects */}
      <div className="text-center p-5">
-        <h3 className="text-2xl font-semibold">GitHub Projects</h3>
+     <h3 className="text-2xl font-semibold inline-flex items-center">
+            <FaGithub className="mr-2" /> GitHub Projects <FaGithub className="ml-2" />
+          </h3>
         <p className="mb-4">These are just a few of my projects on GitHub. If you want to view my GitHub profile...</p>
         
         {/* Button linking to GitHub profile */}
@@ -115,10 +123,24 @@ const Projects = () => {
         )}
       </div>
 
-      <div className="flex justify-center p-5">
+      <div className="text-center p-5">
+          <h3 className="text-2xl font-semibold mb-4">Want to get in touch?</h3>
+          <br></br>
+          <a href="contact" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Contact me!
+          </a>
+        </div>
+
+      <div className="flex justify-center flex-wrap p-5">
         {/* Technology Icons */}
-        <img src="path_to_your_technology_icon.png" alt="Technology Icon" className="h-10 w-10 m-2" />
-        {/* Add more images for technologies */}
+        <FaReact className="h-10 w-10 m-2" />
+        <FaVuejs className="h-10 w-10 m-2 text-green-500" />
+        <FaHtml5 className="h-10 w-10 m-2 text-orange-500" />
+        <FaCss3Alt className="h-10 w-10 m-2 text-blue-500" />
+        <FaPython className="h-10 w-10 m-2 text-yellow-400" />
+        <FaLinux className="h-10 w-10 m-2 text-white" />
+        <SiFirebase className="h-10 w-10 m-2 text-yellow-600" />
+        {/* Add more icons or custom images for other technologies */}
       </div>
     </div>
     </div>
