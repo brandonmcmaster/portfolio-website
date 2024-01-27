@@ -45,7 +45,8 @@ const Projects = () => {
           <FaSpotify className="mr-2" /> My Music <FaSpotify className="ml-2" />
         </h2>
         <br></br>
-        <h3>These are songd that I have written, produced, and performed on.</h3>
+        <br></br>
+        <h3>These are songs that I have written, produced, and performed on.</h3>
       </div>
 
       <div className="flex flex-wrap justify-center">

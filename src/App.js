@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
+import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+      <Header />
         <main className="flex-grow px-3">
         <Routes>
           <Route exact path="/" element={<Home />} />
