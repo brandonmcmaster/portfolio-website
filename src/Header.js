@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
+import LogoImage from './assets/DaftYellow.png'; // Import your logo image here
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ const Header = () => {
       </div>
       <div className="logo">
         {/* Replace with your logo image */}
-        <img src="https://preview.fontget.com/tmp/65b70f2fac3a3.png" alt="Logo" className="h-12 md:h-16 lg:h-20" />
+        <img src={LogoImage} alt="Logo" className="h-12 md:h-16 lg:h-20" />
       </div>
 
       <Link to="/contact" className="contact bg-red-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">

@@ -7,7 +7,7 @@ const GitHubCard = ({ project }) => {
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.name}</div>
-        <p className="text-gray-700 text-base">
+        <p className="text-700 text-base">
           {project.description}
         </p>
       </div>
