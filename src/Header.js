@@ -21,12 +21,15 @@ const Header = () => {
         >
           <Link to="/" className="menu-item" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" className="menu-item" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/projects" className="menu-item" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link to="/contact" className="menu-item" onClick={() => setMenuOpen(false)}>Contact</Link>
           {/* ... other links */}
         </Menu>
       </div>
-<div className="logo">
-    <h1 className="font-ransom">Your Name</h1>
-</div>
+      <div className="logo">
+        {/* Replace with your logo image */}
+        <img src="https://preview.fontget.com/tmp/65b70f2fac3a3.png" alt="Logo" className="h-12 md:h-16 lg:h-20" />
+      </div>
 
       <Link to="/contact" className="contact bg-red-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
         Contact
