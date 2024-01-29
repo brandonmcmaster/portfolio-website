@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* styles/global.css */
+@font-face {
+  font-family: 'Ransom';
+  src: url('/fonts/ransom.ttf') format('truetype');
+}
+
+
