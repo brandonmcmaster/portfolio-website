@@ -25,8 +25,8 @@ const Contact = () => {
       });
   };
 
-  return (
-    <div id="contact" className="p-10">
+  return ( <div className="container mx-auto bg-cover bg-center text-white text-center p-5" style={{ backgroundImage: `url('https://t4.ftcdn.net/jpg/03/66/76/85/240_F_366768552_dU5RS1lwYP84jZmaIC9q0ZYwGi7Zd1N7.jpg` }}>
+  <div className="border-2 border-gray-200 rounded-lg p-10" style={{ backdropFilter: 'blur(4px)', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
        <h1 className="text-4xl font-bold mb-4 text-white text-center">Contact Me</h1>
       <div className="max-w-lg mx-auto bg-gray-100 rounded shadow-lg p-8 mb-4">
         <form ref={form} onSubmit={sendEmail}>
@@ -59,6 +59,7 @@ const Contact = () => {
       <div className="max-w-lg mx-auto">
         <iframe src="https://calendly.com/brandonmcmaster/30-minute-phone-call" width="100%" height="580" frameBorder="0"></iframe>
       </div>
+    </div>
     </div>
   );
 };

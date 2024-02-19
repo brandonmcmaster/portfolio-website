@@ -8,6 +8,7 @@ import Gallery from './Gallery';
 import ResumePressKit from './ResumePressKit';
 import Contact from './Contact';
 import Footer from './Footer';
+import Music from './Music';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/resume" element={<ResumePressKit />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/music" element={<Music />} />
         </Routes>
         </main>
         <Footer />

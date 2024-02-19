@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-const GitHubCard = ({ project }) => {
+const GitHubProjectCard = ({ project }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 border border-gray-300" style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)' }}>
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{project.name}</div>
-        <p className="text-700 text-base">
+        <div className="font-bold text-xl mb-2" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>{project.name}</div>
+        <p className="text-base" style={{ color: 'rgba(255, 255, 255, 0.65)' }}>
           {project.description}
         </p>
       </div>
@@ -17,5 +17,7 @@ const GitHubCard = ({ project }) => {
     </div>
   );
 };
+
+
 
 export default GitHubCard;
