@@ -9,9 +9,9 @@ const Home = () => {
         <p className="text-2xl mb-6" style={{ textShadow: '1px 1px 2px #000000' }}>Explore my journey through code and melodies, where each string strummed is a line of code written.</p>
         <img src={MainImage} alt="Brandon McMaster" className="mx-auto mb-6 rounded-lg shadow-lg" style={{ width: 'auto', height: '400px' }} />
         <div className="flex justify-center gap-4">
-          <a href="/about" className="bg-red-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">About Me</a>
+          <a href="/about" className="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">About Me</a>
           <a href="/projects" className="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">My Projects</a>
-          <a href="/music" className="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">My Music</a>
+          <a href="/music" className="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">My Music</a>
         </div>
       </div>
     </div>

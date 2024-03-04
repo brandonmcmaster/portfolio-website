@@ -24,6 +24,8 @@ function App() {
           <Route path="/resume" element={<ResumePressKit />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/resume" element={<ResumePressKit />} />
+
         </Routes>
         </main>
         <Footer />

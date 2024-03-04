@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Platinum from './assets/platinum.png';
+import Nandan from './assets/nandan.png';
 
 const GitHubProjectCard = ({ project }) => {
   return (
@@ -33,15 +35,14 @@ const Projects = () => {
       .catch(console.error);
   }, []);
 
-  // Replace these URLs with your actual screenshot image URLs
   const websiteScreenshots = [
     {
       url: 'https://platinumon5th.com/',
-      imageUrl: 'screenshotImageUrl1', // Screenshot image URL
+      imageUrl: Platinum, // Use the actual import for your image here
     },
     {
-      url: 'yourSecondWebsiteUrlHere',
-      imageUrl: 'screenshotImageUrl2', // Screenshot image URL
+      url: 'https://indigo-oval-h4fw.squarespace.com/',
+      imageUrl: Nandan, // Use the actual import for your image here
     },
     // Add more as needed
   ];
@@ -54,13 +55,13 @@ const Projects = () => {
         </h3>
         <p className="mb-4">These are just a few of my projects on GitHub. If you want to view my GitHub profile...</p>
         <a href="https://github.com/brandonmcmaster" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Click here!
+          View my GitHub profile!
         </a>
         {loading ? (
           <p>Loading projects...</p>
         ) : (
           <>
-            <div className="flex flex-wrap justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center">
               {projects.map(project => (
                 <GitHubProjectCard key={project.id} project={project} />
               ))}

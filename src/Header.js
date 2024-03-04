@@ -26,6 +26,7 @@ const Header = () => {
           <Link to="/projects" className="menu-item" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link to="/music" className="menu-item" onClick={() => setMenuOpen(false)}>Music</Link>
           <Link to="/contact" className="menu-item" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link to="/resume" className="menu-item" onClick={() => setMenuOpen(false)}>Resume</Link>
           {/* ... other links */}
         </Menu>
       </div>
