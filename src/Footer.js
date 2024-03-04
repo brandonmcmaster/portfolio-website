@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="text-sm mt-4">
-        © {new Date().getFullYear()} Brandon Mcmaster. All Rights Reserved.
+        © {new Date().getFullYear()} Brandon McMaster. All Rights Reserved.
       </p>
     </footer>
   );
