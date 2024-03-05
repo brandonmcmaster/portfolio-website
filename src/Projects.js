@@ -38,18 +38,17 @@ const Projects = () => {
   const websiteScreenshots = [
     {
       url: 'https://platinumon5th.com/',
-      imageUrl: Platinum, // Use the actual import for your image here
+      imageUrl: Platinum,
     },
     {
       url: 'https://indigo-oval-h4fw.squarespace.com/',
-      imageUrl: Nandan, // Use the actual import for your image here
+      imageUrl: Nandan,
     },
-    // Add more as needed
   ];
 
   return (
-    <div className="container mx-auto bg-cover bg-center text-white text-center p-20" style={{ backgroundImage: `url('https://t4.ftcdn.net/jpg/02/19/58/59/240_F_219585941_fa6BJBVucTce3jjJ8Ohj4jwMKMIWHxkm.jpg')`, backdropFilter: 'blur(4px)', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-      <div className="border-2 border-gray-200 rounded-lg p-10" style={{ backdropFilter: 'blur(6px)' }}>
+    <div className="container mx-auto bg-cover bg-center text-white text-center p-5 sm:p-20" style={{ backgroundImage: `url('https://t4.ftcdn.net/jpg/02/19/58/59/240_F_219585941_fa6BJBVucTce3jjJ8Ohj4jwMKMIWHxkm.jpg')`, backdropFilter: 'blur(4px)', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+      <div className="rounded-lg p-5 sm:p-10 sm:border-2 border-gray-200" style={{ backdropFilter: 'blur(6px)' }}>
         <h3 className="text-2xl font-semibold inline-flex items-center">
           <FaGithub className="mr-2" /> GitHub Projects <FaGithub className="ml-2" />
         </h3>
