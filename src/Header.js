@@ -21,12 +21,13 @@ const Header = () => {
               customBurgerIcon={<FaBars />} // Using Font Awesome Bars icon
               customCrossIcon={<FaTimes />} // Using Font Awesome Times icon
         >
-          <Link to="/" className="menu-item" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/about" className="menu-item" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link to="/projects" className="menu-item" onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link to="/music" className="menu-item" onClick={() => setMenuOpen(false)}>Music</Link>
-          <Link to="/contact" className="menu-item" onClick={() => setMenuOpen(false)}>Contact</Link>
-          <Link to="/resume" className="menu-item" onClick={() => setMenuOpen(false)}>Resume</Link>
+          <Link to="/" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/about" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/projects" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link to="/music" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>Music</Link>
+          <Link to="/contact" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link to="/resume" className="font-retro menu-item text-pink-400 hover:text-green-300 transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50" onClick={() => setMenuOpen(false)}>Resume</Link>
+
           {/* ... other links */}
         </Menu>
       </div>

@@ -3,14 +3,17 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {fontFamily: {
-      'ransom': ['Ransom', 'cursive']},
+    extend: {
+      fontFamily: {
+        retro: ['"Press Start 2P"', 'cursive'], // Corrected order
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
 };
+
 
 
